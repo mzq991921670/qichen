@@ -1,0 +1,531 @@
+<!doctype html>
+<html style='font-size:100px;'>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		.box{
+			width: 6.4rem;
+			height: 11rem;
+			background: url(img/bg01.jpg);
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.box_1{
+			overflow: hidden;
+			/* background: #000; */
+			width: 100%;
+			height: 0.75rem;
+			line-height: 0.75rem;
+			background: -webkit-radial-gradient(top,#000 0%,#38383A 100%);
+		}
+		.box_1 li{
+			color: #fff;
+		}
+		.box_1_1{
+			float: left;	
+			overflow: hidden;
+			margin-left: 0.2rem;
+		}
+		.box_1_1_1{
+			float: left;
+			font-size: 0.45rem;
+			font-weight: bold;
+		}
+		.box_1_1_2{
+			float: left;
+			font-size: 0.28rem;
+		}
+		.box_1_2{
+			font-size: 0.38rem;
+			font-weight: bold;
+			float: left;
+			width: 4.6rem;
+			text-align: center;
+			letter-spacing: 10px;
+		}
+		.box_1_3{
+			font-size: 0.38rem;
+			font-weight: bold;
+			float: right;
+			margin-right: 0.25rem;
+		}
+		.box_2{
+			width: 6.4rem;
+			height: 2.71rem;
+		}
+		.box1k{
+			display: none;
+		}
+
+
+		.box_3{
+			display: none;
+		}
+
+
+		.box_3_1{
+			font-size: 0.7rem;
+			font-family: '微软雅黑';
+			color: #C30C15;
+			text-align: center;
+			margin: 0.3rem 0 0.2rem ;
+		}
+		.box_3_2{
+			font-size:0.34rem;
+			color: #72736F;
+			text-align: center;
+			font-family: '微软雅黑';
+			display: none;
+		}
+		.box_3_3{
+			font-size: 0.34rem;
+			text-align: center;
+			color: #0D3679;
+			font-family: '微软雅黑';
+			font-weight: bold;
+			padding: 0.2rem 0 0.15rem;
+		}
+		.box_3_3 span{
+			color: #72736F;
+			font-weight: normal;
+		}
+		.box_3_4{
+			font-size: 0.34rem;
+			text-align: center;
+			color: #0D3679;
+			font-family: '微软雅黑';
+			font-weight: bold;
+		}
+		.box_3_5{
+			font-size: 0.34rem;
+			color: #696562;
+			padding: 0.1rem 0.5rem 0 0.5rem;
+			font-family: '微软雅黑';
+			line-height: 0.55rem;
+		}
+
+		.box2{
+			display: none;
+		}
+		.box2_1{
+			font-size: 0.4rem;
+			font-family: '微软雅黑';
+			text-align: center;
+			color: #00256D;
+			margin: 0.3rem 0 0.1rem ;
+		}
+		.box2_2{
+			width: 5.6rem;
+			height: 4.4rem;
+			background: #fff;
+			margin: 0.05rem 0.2rem 0.2rem 0.2rem;
+			padding: 0.2rem 0.2rem;
+		}
+		.box2_2_1{
+			font-size: 0.26rem;
+			text-align: center;
+			color: #767676;
+		}
+		.box2_2_2{
+			width: 4.18rem;
+			height: 0.75rem;
+			background: url(img/bg03.jpg) 0 0 no-repeat;
+			margin: 0.2rem auto 0.4rem;
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.box2_2_2_1{
+			position: absolute;
+			left: 0.45rem;
+			top: 0.18rem;
+			font-size: 0.3rem;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 0.65rem;
+		}
+		.box2_2_3{
+			width: 4.85rem;
+			height: 2.94rem;
+			background: url(img/qc_07.jpg) 0 0 no-repeat;
+			background-size: 100% 100%;
+			margin: 0 auto;
+		}
+		.box2_3{
+			font-size: 0.28rem;
+			color: #00287D;
+			margin-left: 0.3rem;
+			font-family: '微软雅黑';
+		}
+		.box2_4{
+			margin: 0.1rem 0.3rem 0.1rem;
+			font-size: 0.24rem;
+			color: #686360;
+			line-height: 0.38rem;
+		}
+		.box2_5{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			line-height: 0.97rem;
+			margin: 0.1rem auto ;
+			font-size: 0.4rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+		}
+		.box2_6{
+			width: 5.25rem;
+			height: 0.68rem;
+			overflow: hidden;
+			line-height: 0.68rem;
+			margin: 0.3rem auto;
+		}
+		.box2_6 li{
+			float: left;
+		}
+		.box2_6 li img{
+			width: 0.68rem;
+			height: 0.68rem;
+			background-size: 100% 100%;
+		}
+		.box2_6_1{
+			font-size: 0.3rem;
+		}
+		.wb{
+			margin: 0 0.22rem;
+		}
+		.box3{
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			left: 0rem;
+			top: 0rem;
+			display: none;
+		}
+		.box3_1{
+			width: 6.4rem;
+			height: 4.05rem;
+			z-index: 1;
+			position: absolute;
+			left: 0rem;
+			top: 1rem;
+			background: url(img/share_pop.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.box4{
+			padding: 0.4rem;
+			position: relative;
+			display: none;
+		}
+		.box4_1{
+			font-size: 0.48rem;
+			font-family: '微软雅黑';
+			color: #CC002A;
+			text-align: center;
+			margin-bottom: 0.3rem;
+		}
+		.box4_2{
+			font-size: 0.3rem;
+			color: #666363;
+			margin-bottom: 0.2rem;
+		}
+		.box4_3{
+			width: 5.64rem;
+			height: 3.21rem;
+			background: url(img/y10.png) 0 0 no-repeat;
+			position: absolute;
+			left: 0.3.2rem;
+			top: 2.5rem;
+			z-index: 3;
+			background-size: 100% 100%;
+		}
+		.box4_4{
+			width: 5.64rem;
+			height: 3.21rem;
+			background: url(img/y20.png) 0 0 no-repeat;
+			position: absolute;
+			left: 0.3.2rem;
+			top: 2.5rem;
+			z-index: 2;
+			background-size: 100% 100%;
+		}
+		.box4_5{
+			width: 5.64rem;
+			height: 3.21rem;
+			background: url(img/y30.png) 0 0 no-repeat;
+			position: absolute;
+			left: 0.3.2rem;
+			top: 2.5rem;
+			z-index: 1;
+			background-size: 100% 100%;
+		}
+		.box4_6{
+			font-family: '微软雅黑';
+			font-size: 0.3rem;
+			color: #666363;
+			margin: 3.65rem 0 0.15rem;
+		}
+		.box4_7{
+			width: 5.6rem;
+			height: 0.86rem;
+			background: url(img/shuru2.jpg) 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+		.box4_7_1{
+			width: 4.67rem;
+			height: 0.81rem;
+			position: absolute;
+			left: 1.3rem;
+			top: 6.58rem;
+			border: 1px solid #fff;
+			font-size: 0.35rem;
+		}
+		.box4_8{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.5rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0.15rem auto 0.3rem;
+			background-size: 100% 100%;
+		}
+		.box5{
+			display: none;
+		}
+		.box5_1{
+			font-size: 0.70rem;
+			font-family: '微软雅黑';
+			text-align: center;
+			color: #002971;
+			margin-top: 0.4rem;
+		}
+		.box5_2{
+			padding: 0.3rem 0.3rem;
+			font-size: 0.33rem;
+			color: #686869;
+			font-family: '微软雅黑';
+			line-height: 0.5rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="box_1">
+			<li class='box_1_1'>
+				<div class="box_1_1_1"><</div>
+				<div class="box_1_1_2">返回</div>
+			</li>
+			<li class='box_1_2'>抽奖结果</li>
+			<li class='box_1_3'>…</li>
+		</ul>
+		<div class="box1k">
+			<img src="img/bg02.jpg" alt="" class="box_2">
+			<div class="box_3">
+				<h3 class="box_3_1">好心塞</h3>
+				<p class="box_3_2">很抱歉，您的运气还差那么一点点！</p>
+				<div class="box_3_3">
+					11.20-11.29,<span>&nbsp;&nbsp;广州国际车展，</span>
+				</div>
+				<div class="box_3_4">广州琶洲国际会展中心4.2号馆,</div>
+				<p class="box_3_5">启辰展馆多彩绽放，诚邀您莅临现场，亲身体验！</p>
+			</div>
+		</div>
+		<div class="box2">
+			<h3 class="box2_1">
+				恭喜你，启辰车模已经属于您了！
+			</h3>
+			<div class="box2_2">
+				<p class="box2_2_1">
+					请保持在本页面，凭页面代码到展台领取礼品！
+				</p>
+				<div class="box2_2_2">
+					<div class="box2_2_2_1">
+						QC001
+					</div>
+				</div>
+				<div class="box2_2_3"></div>
+			</div>
+			<h3 class="box2_3">
+				不够过瘾？
+			</h3>
+			<p class="box2_4">
+				那么请留下您的联系方式，就有机会抽取启辰R30晨风一年使用权大奖哦！
+			</p>
+			<div class="box2_5">启辰开回家</div>
+			<ul class="box2_6">
+				<li class="box2_6_1">分享好友积攒人品：</li>
+				<li class="wx"><img src="img/weixin.png" alt=""></li>
+				<li class="wb"><img src="img/xlwb.png" alt=""></li>
+				<li class="qqwb"><img src="img/txwb.png" alt=""></li>
+			</ul>
+		</div>
+
+
+		<div class="box3">
+			<div class="box3_1"></div>
+		</div>
+
+
+		<div class="box4">
+			<h3 class="box4_1">人品不错哦！</h3>
+			<div class="box4_2">
+				恭喜您抽中价值<span id='hf'>10</span>元的手机话费！请留下联系方式，24小时内话费为您送上，请留意短信，谢谢！
+			</div>
+			<div class="box4_3"></div>
+			<div class="box4_4"></div>
+			<div class="box4_5"></div>
+			<div class="box4_6">请输入手机号码24小时内为您充值</div>
+			<div class="box4_7">
+				<input type="text" name="" value="" class="box4_7_1">
+			</div>
+			<div class="box4_8">确定提交</div>
+			<ul class="box2_6">
+				<li class="box2_6_1">分享好友积攒人品：</li>
+				<li class="wx"><img src="img/weixin.png" alt=""></li>
+				<li class="wb"><img src="img/xlwb.png" alt=""></li>
+				<li class="qqwb"><img src="img/txwb.png" alt=""></li>
+			</ul>
+		</div>
+
+		<div class="box5">
+			<h3 class="box5_1">
+				很抱歉
+			</h3>
+			<p class="box5_2">
+				亲，每个微信号只可参加一次幸运大抽奖，感谢您一直以来对启辰的支持，祝您观展愉快！
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	var html=document.getElementsByTagName('html')[0];
+	function auto(){
+		var width=document.documentElement.clientWidth;
+		var cc=(100/640)*width;
+		html.style.fontSize=cc+'px';
+	}
+	auto()
+	window.onresize=function(){
+		auto();
+	}
+	function setCookie (key,value,days) {
+		var date=new Date();
+		date.setDate(date.getDate()+days);
+		// console.log(date);
+		document.cookie=key+"="+escape(value)+"; expires="+date;
+	}
+
+	function getCookie (key) {
+		var arr=document.cookie.split('; ');
+		for (var i = 0; i < arr.length; i++) {
+			var arr1=arr[i].split('=');
+			if (arr1[0]==key) {
+				return unescape(arr1[1]);
+			};
+		};
+		return false;
+	}
+
+	function removeCookie (key) {
+		setCookie (key,'0',-1);
+	}
+
+
+	$('.wx,.wb,.qqwb').click(function(){
+		$('.box3').show();
+	})
+	$('.box3').click(function(){
+		$('.box3').hide();
+	})
+	$('.box2_5').click(function(){
+		window.open('kaihuijia.html','_blank')
+	})
+		
+
+//box1k没抽到
+//box2抽到车模
+//box3蒙版
+//box4话费
+	if (getCookie('zhijc')=='jc') {
+		$('.box1k').show();
+		$('.box5').show();
+		$('.box_3').hide();
+		$('.box2').hide();
+		$('.box3').hide();
+		$('.box4').hide();
+	} else{
+		setCookie('zhijc','jc','7')
+		if(getCookie('zhia')==false){   		//不在现场
+			// console.log(getCookie('zhib'));
+			if (getCookie('zhib')==1) {			//抽到话费
+				// alert(222)
+				$('.box2').hide();
+				$('.box3').hide();
+				$('.box4').show();
+				$('.box1k').hide();
+				$('.box5').hide();
+				$('.box_3').hide();
+
+
+				if (getCookie('zhic')==0) {//10元
+					$('.box4_3').show()
+					$('.box4_4').hide()
+					$('.box4_5').hide()
+					$('#hf').html('10')
+				};
+				if (getCookie('zhic')==1) {//20元
+					$('.box4_3').hide()
+					$('.box4_4').show()
+					$('.box4_5').hide()
+					$('#hf').html('20')
+				};
+				if (getCookie('zhic')==2) {//30元
+					$('.box4_3').hide()
+					$('.box4_4').hide()
+					$('.box4_5').show()
+					$('#hf').html('30')
+				};
+			}else{								//没抽到话费
+				// alert('1111')
+				$('.box2').hide();
+				$('.box3').hide();
+				$('.box4').hide();
+				$('.box1k').show();
+				$('.box5').hide();
+				$('.box_3').show();
+			}
+		}else{
+			if (getCookie('zhia')==1) {			//在现场
+				$('.box2').show();
+				$('.box3').hide();
+				$('.box4').hide();
+				$('.box1k').hide();
+				$('.box5').hide();
+				$('.box_3').hide();
+			}else{
+				$('.box2').hide();
+				$('.box3').hide();
+				$('.box4').hide();
+				$('.box1k').show();
+				$('.box5').hide();
+				$('.box_3').show();
+			}
+			removeCookie('zhia');
+		}		
+	};
+</script>
+</html>

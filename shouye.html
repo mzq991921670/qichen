@@ -1,0 +1,419 @@
+<!doctype html>
+<html style='font-size:100px;'>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<style>
+		.box{
+			width: 6.4rem;
+			height: 11rem;
+			background: url(img/bg01.jpg);
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.box_1{
+			overflow: hidden;
+			/* background: #000; */
+			width: 100%;
+			height: 0.75rem;
+			line-height: 0.75rem;
+			background: -webkit-radial-gradient(top,#000 0%,#38383A 100%);
+		}
+		.box_1 li{
+			color: #fff;
+		}
+		.box_1_1{
+			float: left;	
+			overflow: hidden;
+			margin-left: 0.2rem;
+		}
+		.box_1_1_1{
+			float: left;
+			font-size: 0.45rem;
+			font-weight: bold;
+		}
+		.box_1_1_2{
+			float: left;
+			font-size: 0.28rem;
+		}
+		.box_1_2{
+			font-size: 0.38rem;
+			font-weight: bold;
+			float: left;
+			width: 4.6rem;
+			text-align: center;
+			letter-spacing: 10px;
+		}
+		.box_1_3{
+			font-size: 0.38rem;
+			font-weight: bold;
+			float: right;
+			margin-right: 0.25rem;
+		}
+		.box_1k{
+			/* display: none; */
+		}
+		.box_2{
+			width: 6.4rem;
+			height: 2.71rem;
+		}
+		.box_3{
+			width: 5.09rem;
+			height: 1.98rem;
+			margin: 0.28rem auto;
+		}
+		.box_3 img{
+			width: 5.09rem;
+			height: 1.98rem;
+			background-size: 100% 100%;
+		}
+		.box_4{
+			/* width: 4.33rem; */
+			margin-top: 0.5rem;
+		}
+		.box_4_1{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.4rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0 auto 0.2rem;
+			background-size: 100% 100%;
+		}
+		.box_4_2{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.4rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0 auto 0.2rem;
+			background-size: 100% 100%;
+		}
+		.box_5{
+			font-size: 0.4rem;
+			color: #05348C;
+			font-style: italic;
+			font-weight: bold;
+			text-decoration: underline;
+			width: 1.7rem;
+			margin: 0.35rem auto;
+		}
+		.box2{
+			background: rgba(0,0,0,0.5);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			display: none;
+		}
+		.box2_1{
+			width: 5.52rem;
+			height: 6.37rem;
+			border: 0.08rem solid #002A6F;
+			z-index: 2;
+			background: #fff;
+			border-radius: 0.3rem;
+			position: absolute;
+			left: 0.15rem;
+			top: 1.9rem;
+			padding: 0.4rem 0.2rem;
+		}
+		.box2_1_1{
+			font-size: 0.32rem;
+			color: #032572;
+			font-weight: bold;
+			margin-bottom: 0.15rem;
+			font-family: '微软雅黑';
+		}
+		.box2_1 dd{
+			font-size: 0.26rem;
+			color: #6C6C6C;
+			text-indent: 2em;
+			line-height: 0.4rem;
+		}
+		.box2_2{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.5rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0 auto 0.2rem;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 7.7rem;
+			left: 1rem;
+			z-index: 2;
+		}
+
+
+		.box3{
+			background: rgba(0,0,0,0.5);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			display: none;
+		}
+		.box3_1{
+			width: 5.52rem;
+			height: 4.6rem;
+			border: 0.08rem solid #002A6F;
+			z-index: 2;
+			background: #fff;
+			border-radius: 0.3rem;
+			position: absolute;
+			left: 0.15rem;
+			top: 2.1rem;
+			padding: 0.4rem 0.2rem;
+		}
+		.box3_1 h3{
+			font-size: 0.36rem;
+			color: #032572;
+			margin-bottom: 0.15rem;
+			text-align: center;
+		}
+		.box3_2{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.5rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0 auto 0.2rem;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 4.5rem;
+			left: 1rem;
+			z-index: 2;
+		}
+		.box3_3{
+			width: 4.33rem;
+			height: 0.97rem;
+			background: url(img/btn01.png);
+			line-height: 0.97rem;
+			font-size: 0.5rem;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 0 0.03rem red;
+			font-style: italic;
+			margin: 0 auto 0.2rem;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 5.7rem;
+			left: 1rem;
+			z-index: 2;
+		}
+		.box4{
+			display: none;
+		}
+		.box4_1{
+			font-size: 0.5rem;
+			color: #012870;
+			font-family: '微软雅黑';
+			text-align: center;
+			margin: 0.25rem 0 0.05rem 0;
+		}
+		.box4_2{
+			font-size: 0.3rem;
+			color: #676767;
+			font-family: '微软雅黑';
+			text-align: center;
+		}
+		.box4_3{
+			padding: 0.15rem 0.15rem;
+			overflow: hidden;
+		}
+		.box4_3 li{
+			float: left;
+			width: 1.99rem;
+			height: 2.77rem;
+			background-size: 100% 100%;
+			padding-bottom: 0.05rem;
+		}
+		.box4_3 li img{
+			width: 1.99rem;
+			height: 2.77rem;
+			background-size: 100% 100%;
+		}
+		.box4_3_2,.box4_3_5{
+			padding: 0 0.06rem 0 0.06rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="box_1">
+			<li class='box_1_1'>
+				<div class="box_1_1_1"><</div>
+				<div class="box_1_1_2">返回</div>
+			</li>
+			<li class='box_1_2'>码上辰献</li>
+			<li class='box_1_3'>…</li>
+		</ul>
+		
+		<img src="img/bg02.jpg" alt="" class="box_2">
+			<div class="box_1k">
+			<div class="box_3">
+				<img src="img/msyl.png" alt="">
+			</div>
+			<div class="box_4">
+				<div class="box_4_1">
+					我在车展 马上拿奖
+				</div>
+				<div class="box_4_2">
+					不在现场 试试手气	
+				</div>
+			</div>
+			<div class="box_5">
+				活动说明
+			</div>
+		</div>
+
+
+		<div class="box2">
+			<dl class="box2_1">
+				<dt class="box2_1_1">
+					活动说明：
+				</dt>
+				<dd class="box2_1_2">
+					抽奖活动哪家强，东风日产看启辰。广州车展期间，启辰君为您准备了多彩铅笔套装、购车代金券、晨风车模、手机话费等精美礼品；
+				</dd>
+				<dd>车展现场参与活动的用户百分百中奖，留下联系方式更有机会赢取启辰R30、启辰晨风一年使用权大奖；场外用户参与活动也有机会获得话费充值大奖</dd>
+				<dd>心动了吗？那就行动吧！</dd>
+				<dd>参与车展现场抽奖活动，中奖礼品只限当天在启辰展台现场兑奖，过时不候哦，详情请咨询启辰展台工作人员。</dd>
+				
+			</dl>
+			<div class="box2_2">
+				马上抽奖
+			</div>
+		</div>
+
+
+		<div class="box3">
+			<div class="box3_1">
+				<h3 class="box3_1_1">请确认你是否在车展现场，</h3>
+				<h3>以免无法兑奖，</h3>
+				<h3>不在车展现场还可以抽取话费哦！</h3>
+			</div>
+			<div class="box3_2">
+				确定
+			</div>
+			<div class="box3_3">
+				重新选择
+			</div>
+		</div>
+			
+		<div class="box4">
+			<h2 class="box4_1">
+				幸运“触”手可及
+			</h2>
+			<div class="box4_2">
+				轻触任一款启辰车型牌即可参与抽奖
+			</div>
+			<ul class="box4_3">
+				<li class="box4_3_1"><img src="img/qc_01.png" alt=""></li>
+				<li class="box4_3_2"><img src="img/qc_02.png" alt=""></li>
+				<li class="box4_3_3"><img src="img/qc_03.png" alt=""></li>
+				<li class="box4_3_4"><img src="img/qc_04.png" alt=""></li>
+				<li class="box4_3_5"><img src="img/qc_05.png" alt=""></li>
+				<li class="box4_3_6"><img src="img/qc_06.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	var html=document.getElementsByTagName('html')[0];
+	function auto(){
+		var width=document.documentElement.clientWidth;
+		var cc=(100/640)*width;
+		html.style.fontSize=cc+'px';
+	}
+	auto()
+	window.onresize=function(){
+		auto();
+	}
+
+	$('.box_5').click(function(){
+		$('.box2').show();
+	})
+	$('.box2_2').click(function(){
+		$('.box2').hide();
+		$('.box3').show();
+	})
+
+	$('.box3_3').click(function(){
+		$('.box3').hide();
+	})
+	$('.box_4_1').click(function(){
+		// $('.box3').hide();
+		// $('.box_1k').hide();
+		// $('.box4').show();
+		$('.box3').show();
+	})
+	$('.box3_2').click(function(){
+		$('.box3').hide();
+		$('.box_1k').hide();
+		$('.box4').show();
+	})
+
+	function setCookie (key,value,days) {
+		var date=new Date();
+		date.setDate(date.getDate()+days);
+		// console.log(date);
+		document.cookie=key+"="+escape(value)+"; expires="+date;
+	}
+
+	function getCookie (key) {
+		var arr=document.cookie.split('; ');
+		for (var i = 0; i < arr.length; i++) {
+			var arr1=arr[i].split('=');
+			if (arr1[0]==key) {
+				return unescape(arr1[1]);
+			};
+		};
+		return false;
+	}
+
+	function removeCookie (key) {
+		setCookie (key,'0',-1);
+	}
+	$('.box4_3 li').click(function(){
+		var a=Math.ceil(Math.random()*3)
+		setCookie('zhia',a,'7');
+		window.open('tianxie.html','_blank')
+	})
+
+	$('.box_4_2').click(function(){
+		var b=Math.floor(Math.random()*2)
+		setCookie('zhib',b,'7')
+		var c=Math.floor(Math.random()*3)
+		setCookie('zhic',c,'7')
+		window.open('tianxie.html','_blank')
+	})
+</script>
+</html>
